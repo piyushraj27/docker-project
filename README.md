@@ -5,7 +5,8 @@ This is my final project to setup *JOOMLA* WebApp using *Docker* under the mento
 ## Prerequisites :-
 * RedHat Enterprise Linux 8 , DOCKER software installed .
 ## 1. Starting DOCKER:
-* Use `#systemctl start docker`.You need to start DOCKER because it is a PRODUCT . So, before using it,you need to start docker services.
+* Use `#systemctl start docker`.You need to start DOCKER because it is a PRODUCT . So, before using it,you need to start docker services. ![MySQL server]
+
 ## 2. Download required docker images:
 * Pull MySQL image:
   * Use `#docker pull mysql:5.7` to download **mysql version 5.7** image to use as database server.
