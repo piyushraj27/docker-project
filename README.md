@@ -17,7 +17,7 @@ This project is to setup JOOMLA (open-source content management system for publi
 ![MySQL server](screenshots_docker/volume%20create%20run%20mysql.png)
 * To see databases created you need to install MySQL client which will send request to MySQL Server . For installing, use `#yum install mysql`.
 ![install mysql client](screenshots_docker/ip%20%26%20mysql.png)
-![mysql database](screenshots_docker/data%20add.png)
+![mysql database](screenshots_docker/sql%20database.png)
 ## (4) Create a seperate volume and start webapp in different container
 * Use `#docker volume create <name of volume2>` .
 ![create storage for joomla](screenshots_docker/volume%20create.png)
