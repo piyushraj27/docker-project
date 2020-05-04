@@ -37,7 +37,7 @@ This project is to setup JOOMLA (open-source content management system for publi
 * Use `#docker-compose up` and `#docker-compose down` to start and stop services.
  ![docker compose up](screenshots_docker/docker%20compose.png)
  ![docker compose up output](dscreenshots_docker/output%20.png)
- ## 7. Finally , your WebApp can be seen:
+ ## (7) Finally , your WebApp can be seen:
  ![final result](screenshots_docker/12_final%20output.png)
  ## TROUBLESHOOT (some possible error solution)
  * There might be possible it is not able to connect that might be due to FIREWALL . Use `#systemctl stop firewalld`. Again you want to start the service use `#systemctl start firewalld`. but, it is not good practice to stop firewall. Instead do this,
@@ -50,5 +50,6 @@ This project is to setup JOOMLA (open-source content management system for publi
     `#firewall-cmd --reload`
    * Restart docker 
     `#systemctl restart docker`
- * If JOOMLA WebApp is not opening on your desired port , maybe due to **iptables** . Use `#iptables -P FORWARD ACCEPT` 
+ * If WebApp is not opening on your port , maybe due to **iptables** . 
+ Use `#iptables -P FORWARD ACCEPT` 
 
