@@ -24,8 +24,8 @@ This project is to setup JOOMLA (open-source content management system for publi
 * Use `#docker run -dit  -e JOOMLA_DB_HOST=<hostname of container having mysql>  -e JOOMLA_DB_USER=<user name>  -e JOOMLA_DB_PASSWORD=<password for user account>  -e JOOMLA_DB_NAME=<name of folder inside MySQL which will be your database>  -v <name of volume2>:/var/www/html  --name <container name>  -p <port no. of router i.e. exposed port>:<port no. of services running inside your server>  --link <hostname of container having mysql>  joomla:3.9-php7.2-apache` .
 ![run joomla](screenshots_docker/run%20webapp.png)
 ## Now, you can see in your browser by typing  `<ip address>:<port no. that you have exposed>`
-![joomla on chrome browser](docker%20screenshots/6_joomla%20on%20browser.png)
-![data added in MySQL database](docker%20screenshots/7_data%20added.png)
+![joomla on chrome browser](screenshots_docker/bowse%20pic.png)
+![data added in MySQL database](screenshots_docker/data%20add.png)
 ## 5. Docker-compose:
 * Before using Docker-Compose you should install the software. For reference go to this website : https://docs.docker.com/compose/install/
 * You can create and edit this file using vim editor. For that use `#vim docker-compose.yml`. Remember the file name should always be **docker-compose.yml**. You can change but, in later.
