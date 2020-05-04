@@ -27,10 +27,10 @@ This project is to setup JOOMLA (open-source content management system for publi
 ![joomla on chrome browser](screenshots_docker/bowse%20pic.png)
 ![data added in MySQL database](screenshots_docker/data%20add.png)
 ## (5) Docker compose
-* Before using Docker-Compose you should install the software.Link refrence- https://docs.docker.com/compose/install/
+*  Install the software before using Docker-Compose you should install the software. Link refrence- https://docs.docker.com/compose/install/
 * You can create and edit this file using vim editor. For that use `#vim docker-compose.yml`. Remember the file name should always be **docker-compose.yml**.
 ![yml file](screenshots_docker/yml%20file1.png)
-![yml file continued](screenshots_docker/yml%20file2.pngg)
+![yml file continued](screenshots_docker/yml%20file2.png)
 ## 6. Docker-compose up/down or start/stop:
 * We have copied entire infrastructure in one single file. Now it is ready to go !!! Now, you will come to know about the role of Docker. How it is so fast !!!
 * Use `#docker-compose up` and `#docker-compose down` to start and stop services respectively.
