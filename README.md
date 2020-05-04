@@ -5,12 +5,12 @@ This project is to setup JOOMLA (open-source content management system for publi
 ## (1) Starting a Docker
 * Use `#systemctl start docker`,to start DOCKER because it's a PRODUCT. ![MySQL server](screenshots_docker/start%20docker.png)
 
-## 2. Download required docker images:
-* Pull MySQL image:
+## (2) Download required docker images
+* Pull image of MySQL
   * Use `#docker pull mysql:5.7` to download **mysql version 5.7** image to use as database server.
-* Pull JOOMLA image:
+* Pull image of JOOMLA
   * Use `#docker pull joomla:3.9-php7.2-apache` to download **joomla image** with php and apache web server already configured.
-  * *to know more go to page: https://hub.docker.com/ 
+   * to know more go to page: https://hub.docker.com/ 
 ## 3. Create a seperate volume for storage and start MySQL in one container:
 * Use `#docker volume create <name of volume1>` .
 * Use `#docker run -dit -e MYSQL_ROOT_PASSWORD=<password of your root account>  -e MYSQL_USER=<user name>  -e MYSQL_PASSWORD=<password for user account>  -e MYSQL_DATABASE=<name of folder inside MySQL which will be your database>  -v <name of volume1>:/var/lib/mysql  --name <hostname of container having mysql>  mysql:5.7` .
