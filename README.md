@@ -3,7 +3,7 @@ This project is to setup JOOMLA (open-source content management system for publi
 
 ## Project Description
 ## (1) Starting a Docker
-* Use `#systemctl start docker`,to start DOCKER because it's a PRODUCT. ![MySQL server](/docker%20screenshots_docker/start%20docker.png)
+* Use `#systemctl start docker`,to start DOCKER because it's a PRODUCT. ![MySQL server](docker%20screenshots_docker/start%20docker.png)
 
 ## 2. Download required docker images:
 * Pull MySQL image:
