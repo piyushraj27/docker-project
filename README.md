@@ -2,7 +2,7 @@
 This project is to setup JOOMLA (open-source content management system for publishing web content) using *Docker* under the guidance and mentorship of **Mr. Vimal Daga** sir.
 
 ## Project Description
-## (1) Starting a Docker
+## (1) Start a Docker
 * Use `#systemctl start docker`,to start DOCKER because it's a PRODUCT. ![MySQL server](screenshots_docker/start%20docker.png)
 
 ## (2) Download required docker images
@@ -11,13 +11,13 @@ This project is to setup JOOMLA (open-source content management system for publi
 * Pull image of JOOMLA
   * Use `#docker pull joomla:3.9-php7.2-apache` to download **joomla image** with php and apache web server already configured.
    * to know more go to page: https://hub.docker.com/ 
-## 3. Create a seperate volume for storage and start MySQL in one container:
+## (3) Create a seperate volume for storage and start MySQL in one container
 * Use `#docker volume create <name of volume1>` .
 * Use `#docker run -dit -e MYSQL_ROOT_PASSWORD=<password of your root account>  -e MYSQL_USER=<user name>  -e MYSQL_PASSWORD=<password for user account>  -e MYSQL_DATABASE=<name of folder inside MySQL which will be your database>  -v <name of volume1>:/var/lib/mysql  --name <hostname of container having mysql>  mysql:5.7` .
-![MySQL server](/docker%20screenshots/1_volume%20create%20and%20run%20MySQL.png)
+![MySQL server](screenshots_docker/volume%20create%20run%20mysql.png)
 * To see databases created you need to install MySQL client which will send request to MySQL Server . For installing, use `#yum install mysql`.
-![install mysql client](docker%20screenshots/2_ip%20and%20mysql%20client.png)
-![mysql database](docker%20screenshots/3_mysql%20database.png)
+![install mysql client](screenshots_docker/ip%20amd%20mysql.png)
+![mysql database](screenshots_docker/data%20add.png)
 ## 4. Create a seperate volume and start JOOMLA in another container:
 * Use `#docker volume create <name of volume2>` .
 ![create storage for joomla](docker%20screenshots/4_another%20volume%20create.png)
