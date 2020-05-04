@@ -31,17 +31,15 @@ This project is to setup JOOMLA (open-source content management system for publi
 * You can create and edit this file using vim editor. For that use `#vim docker-compose.yml`. Remember the file name should always be **docker-compose.yml**.
 ![yml file](screenshots_docker/yml%20file1.png)
 ![yml file continued](screenshots_docker/yml%20file2.png)
-## 6. Docker-compose up/down or start/stop:
-* We have copied entire infrastructure in one single file. Now it is ready to go !!! Now, you will come to know about the role of Docker. How it is so fast !!!
-* Use `#docker-compose up` and `#docker-compose down` to start and stop services respectively.
- ![docker compose up](docker%20screenshots/10_docker%20compose%20up.png)
- ![docker compose up output](docker%20screenshots/10_output.png)
- ![docker compose down](docker%20screenshots/11_docker%20compose%20down.png)
- ![docker compose down output](docker%20screenshots/11_output.png)
- 
+## (6) Docker-compose
+## UP/DOWN or START/STOP
+* Copied entire infrastructure in one single file.Now, you will come to know about the role of Docker. Why it's so fast?
+* Use `#docker-compose up` and `#docker-compose down` to start and stop services.
+ ![docker compose up](screenshots_docker/docker%20compose.png)
+ ![docker compose up output](dscreenshots_docker/output%20.png)
  ## 7. Finally , your WebApp can be seen:
- ![final result](docker%20screenshots/12_final%20output.png)
- ## TROUBLESHOOT:
+ ![final result](screenshots_docker/12_final%20output.png)
+ ## TROUBLESHOOT (some possible error solution)
  * There might be possible it is not able to connect that might be due to FIREWALL . Use `#systemctl stop firewalld`. Again you want to start the service use `#systemctl start firewalld`. but, it is not good practice to stop firewall. Instead do this,
    * Masquerading allows for docker ingress and egress 
     `#firewall-cmd --zone=public --add-masquerade --permanent`
@@ -52,7 +50,5 @@ This project is to setup JOOMLA (open-source content management system for publi
     `#firewall-cmd --reload`
    * Restart docker 
     `#systemctl restart docker`
- * If JOOMLA WebApp is not opening on your desired port , maybe due to **iptables** . Use `#iptables -P FORWARD ACCEPT` .
- 
- ## THANK YOU VIMAL SIR FOR YOUR GUIDANCE!!!
+ * If JOOMLA WebApp is not opening on your desired port , maybe due to **iptables** . Use `#iptables -P FORWARD ACCEPT` 
 
