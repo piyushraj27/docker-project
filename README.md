@@ -1,12 +1,9 @@
 # Docker-Project
-This is my final project to setup *JOOMLA* WebApp using *Docker* under the mentorship of **Mr. VIMAL DAGA** sir, under the campaign **IIEC RISE**.
+This project is to setup JOOMLA (open-source content management system for publishing web content) using *Docker* under the guidance and mentorship of **Mr. Vimal Daga** sir.
 
-## Explaining the PROJECT:
-## Prerequisites :-
-* RedHat Enterprise Linux 8 , DOCKER software installed .
-## 1. Starting DOCKER:
-* Use `#systemctl start docker`.You need to start DOCKER because it is a PRODUCT . So, before using it,you need to start docker services. ![MySQL server]
-(/start%20docker.png)
+## Project Description
+## (1) Starting a Docker
+* Use `#systemctl start docker`,to start DOCKER because it's a PRODUCT. ![MySQL server](/start%20docker.png)
 
 ## 2. Download required docker images:
 * Pull MySQL image:
