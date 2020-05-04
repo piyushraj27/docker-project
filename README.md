@@ -22,8 +22,7 @@ This project is to setup JOOMLA (open-source content management system for publi
 * Use `#docker volume create <name of volume2>` .
 ![create storage for joomla](screenshots_docker/volume%20create.png)
 * Use `#docker run -dit  -e JOOMLA_DB_HOST=<hostname of container having mysql>  -e JOOMLA_DB_USER=<user name>  -e JOOMLA_DB_PASSWORD=<password for user account>  -e JOOMLA_DB_NAME=<name of folder inside MySQL which will be your database>  -v <name of volume2>:/var/www/html  --name <container name>  -p <port no. of router i.e. exposed port>:<port no. of services running inside your server>  --link <hostname of container having mysql>  joomla:3.9-php7.2-apache` .
-![run joomla](docker%20screenshots/5_run%20joomla.png)
-
+![run joomla](screenshots_docker/run%20webapp.png)
 ## Now, you can see in your browser by typing  `<ip address>:<port no. that you have exposed>`
 ![joomla on chrome browser](docker%20screenshots/6_joomla%20on%20browser.png)
 ![data added in MySQL database](docker%20screenshots/7_data%20added.png)
